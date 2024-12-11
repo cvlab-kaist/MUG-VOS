@@ -6,7 +6,7 @@
 <sup>1</sup>Korea University&emsp;&emsp;&emsp;&emsp;<sup>2</sup>KAIST&emsp;&emsp;&emsp;&emsp;<sup>3</sup>Samgsung Electronics
 
 *: Equal Contribution <br>
-&dagger;: Co-Corresponding Authors
+&dagger;: Co-Corresponding Author
 
 **AAAI 2025**
 
