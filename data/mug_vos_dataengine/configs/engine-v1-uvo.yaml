@@ -1,0 +1,13 @@
+loader:
+  dataset: UVO
+  data_dir: /media/dataset3/video_seg/dataset/ytvos_2019
+  split: train # valid, train
+
+engine:
+  version: 1
+  fully_gen: True # True: generate all masks, False: generate only the first mask
+  n_iter: 5 # number of iterations for the engine
+  n_points_per_mask: 2 # number of points to be selected for each mask
+
+gen_anno_dir: /media/dataset3/video_seg_engine_anno/YTVOS_train_gen_anno
+vis_dir: /home/cvlab11/project/kschan/a_code/videosam-data_engine/results/YTVOS_train

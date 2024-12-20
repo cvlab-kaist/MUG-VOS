@@ -12,32 +12,46 @@
 
 <a href="https://arxiv.org/abs/2412.01471"><img src="https://img.shields.io/badge/arXiv-2412.01471-%23B31B1B"></a>
 <a href="https://cvlab-kaist.github.io/MUG-VOS/"><img src="https://img.shields.io/badge/Project%20Page-online-brightgreen"></a>
-</div>
 
-<!--
 <p float='center'><img src="assets/teaser.png" width="80%" /></p>
-<span style="color: green; font-size: 1.3em; font-weight: bold;">LocoTrack is an incredibly efficient model,</span> enabling near-dense point tracking in real-time. It is <span style="color: red; font-size: 1.3em; font-weight: bold;">6x faster</span> than the previous state-of-the-art models.
+<span style="color: green; font-size: 1.3em; font-weight: bold;">MUG-VOS contains multiple granularities masks from coarse to fine segments.</span>
+</div>
 
 
 ## 📰 News
-* **2024-07-22:** [LocoTrack](https://github.com/KU-CVLAB/locotrack/) is released.
-* **2024-08-03:** PyTorch inference and training code released.
-* **2024-08-05:** [Interactive demo](https://huggingface.co/spaces/hamacojr/LocoTrack) released.
+* **2024-12-01:** [MUG-VOS](https://github.com/cvlab-kaist/MUG-VOS) is released.
+* **2024-12-20:** Training Code, Data collection pipeline, and MUG-VOS Testset are released.
 
-**Please stay tuned for an easy-to-use API for LocoTrack, coming soon!**
--->
+**Please stay tuned for a MUG-VOS v2!**
+
+## Evaluation Dataset Preparation
+First, download the evaluation datasets:
+- [Huggingface Dataset](https://huggingface.co/datasets/SammyLim/MUG-VOS/tree/main/mug_vos_test_v1)
+
+or
+
+```bash
+git clone https://huggingface.co/datasets/SammyLim/MUG-VOS
+```
+
+## Data Collection Pipeline
+For detailed instructions on Data Collection Pipeline, please refer to the README file for your chosen implementation:
+- **[PyTorch Implementation](./data/README.md)**
+
+
+## Training and Evaluation
+For detailed instructions on training and evaluation, please refer to the README file for your chosen implementation:
+- **[PyTorch Implementation](./mmpm/README.md)**
+
 
 ## 📚 Citing this Work
 Please use the following bibtex to cite our work:
 ```
-@misc{lim2024multigranularityvideoobjectsegmentation,
-      title={Multi-Granularity Video Object Segmentation}, 
-      author={Sangbeom Lim and Seongchan Kim and Seungjun An and Seokju Cho and Paul Hongsuck Seo and Seungryong Kim},
-      year={2024},
-      eprint={2412.01471},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.01471}, 
+@article{lim2024multi,
+  title={Multi-Granularity Video Object Segmentation},
+  author={Lim, Sangbeom and Kim, Seongchan and An, Seungjun and Cho, Seokju and Seo, Paul Hongsuck and Kim, Seungryong},
+  journal={arXiv preprint arXiv:2412.01471},
+  year={2024}
 }
 ```
 

@@ -1,0 +1,15 @@
+loader:
+  dataset: DAVIS
+  data_dir: /media/dataset3/video_seg/dataset/DAVIS
+  split: train
+
+engine:
+  version: 1
+  fully_gen: True # True: generate all masks, False: generate only the first mask
+  n_iter: 5 # number of iterations for the engine
+  n_points_per_mask: 2 # number of points to be selected for each mask
+
+gen_anno_dir: /media/dataset3/video_seg_engine_anno/DAVIS17_train
+vis_dir: /home/cvlab11/project/kschan/a_code/videosam-data_engine/results/DAVIS_train
+
+# CUDA_VISIBLE_DEVICES=5 python datagen.py --config /home/cvlab11/project/kschan/a_code/videosam-data_engine/configs/engine-v1-davis-train.yaml

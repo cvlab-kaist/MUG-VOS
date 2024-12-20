@@ -1,0 +1,19 @@
+loader:
+  dataset: DAVIS
+  data_dir: /media/data3/video_seg/dataset/DAVIS
+  split: val
+
+engine:
+  version: 1
+  fully_gen: True # True: generate all masks, False: generate only the first mask
+  n_iter: 5 # number of iterations for the engine
+  n_points_per_mask: 5 # number of points to be selected for each mask
+  sampling_method: random # random or kmeans
+  point_per_side: 32 # number of points per side for the grid sampling
+  sam_checkpoint: /home/cvlab14/project/seongchan/mug/weights/sam_vit_h_4b8939.pth
+
+gen_method:
+  use_bin: False
+  bin_size: 10
+
+gen_anno_dir: /home/cvlab14/project/seongchan/mug/mug_vos_dataengine/annos

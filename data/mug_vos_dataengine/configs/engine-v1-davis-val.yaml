@@ -1,0 +1,13 @@
+loader:
+  dataset: DAVIS
+  data_dir: /home/cvlab14/project/seongchan/DAVIS
+  split: val
+
+engine:
+  version: 1
+  fully_gen: True # True: generate all masks, False: generate only the first mask
+  n_iter: 5 # number of iterations for the engine
+  n_points_per_mask: 2 # number of points to be selected for each mask
+
+gen_anno_dir: /home/cvlab14/project/seongchan/videosam-data_engine_output/DAVIS_val
+vis_dir: /home/cvlab14/project/seongchan/videosam-data_engine_vis/DAVIS_val
